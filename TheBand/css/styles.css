@@ -1,0 +1,452 @@
+/*reset CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+/*
+1.Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết 
+*/
+
+/* 1. Vị trí
+2. Kích thước (width, height)   
+3. Màu sắc
+4. Kiểu dáng(kiểu chữ, hình tròn, hình vuông)
+*/
+
+/* header */
+
+.container {
+  max-width: 800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-span {
+  opacity: 0.6;
+  font-style: italic;
+  margin: 20px 0;
+  display: block;
+}
+.section-distance {
+  padding: 80px 0;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#header .navbar {
+  display: flex;
+}
+
+#header .navbar a {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 46px;
+}
+#header .navbar a:hover,
+#header .navbar .more:hover > a {
+  background-color: #ccc;
+  color: #000;
+}
+#header .navbar .more {
+  position: relative;
+}
+#header .navbar .more:hover .subnav {
+  display: block;
+}
+
+#header .navbar .subnav {
+  position: absolute;
+  top: 100%;
+  box-shadow: 3px 10px 30px rgba(0, 0, 0, 0.7);
+  background-color: #fff;
+  display: none;
+}
+
+#header .navbar .subnav a {
+  display: block;
+  color: black;
+  min-width: 150px;
+  padding: 0 12px;
+}
+
+#header .icon i {
+  font-size: 15px;
+  color: #fff;
+  height: 46px;
+  width: 60px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#header .icon:hover i {
+  background-color: red;
+}
+
+/* .carousel */
+#carousel {
+  margin-top: 46px;
+}
+#carousel .carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#carousel .item-1 {
+  background-image: url(../img/slider/ny.jpg);
+}
+#carousel .item-2 {
+  background-image: url(../img/slider/chicago.jpg);
+}
+
+#carousel .title {
+  text-align: center;
+  color: #fff;
+}
+#carousel .title h1 {
+  font-size: 30px;
+}
+
+#carousel .title p {
+  font-weight: 400;
+  margin: 25px 0;
+  font-weight: 600;
+}
+/* band */
+
+#band .title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+#band .title p {
+  text-align: justify;
+  line-height: 1.4;
+}
+#band .main .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#band .main .row .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#band .main .row .item img {
+  width: 60%;
+  border-radius: 10px;
+}
+#band .main .row .item span {
+  margin-bottom: 15px;
+}
+/* tour */
+#tour {
+  background-color: #000;
+}
+#tour .title {
+  text-align: center;
+  color: #fff;
+}
+#tour .main .container .booking {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+#tour .main .container .booking .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#tour .main .container .booking .item:nth-child(2) {
+  border-width: 1px 0;
+  border-color: #ddd;
+  border-style: solid;
+}
+#tour .main .container .booking .item:last-child {
+  justify-content: space-between;
+}
+#tour .main .container .booking .item:last-child span {
+  margin-right: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+#tour .main .container .booking .item {
+  padding: 8px 0;
+}
+#tour .main .container .booking .item p {
+  font-size: 15px;
+  margin: 0;
+  color: #757575;
+  padding: 0 15px 0 8px;
+}
+#tour .main .container .booking .item span {
+  background-color: #f44336;
+  padding: 0 5px;
+  color: #fff;
+}
+
+#tour .place .row {
+  display: flex;
+  justify-content: space-around;
+}
+#tour .place .row .item img {
+  width: 100%;
+}
+#tour .place .row .item img:hover {
+  filter: contrast(50%);
+  opacity: 0.6;
+}
+#tour .place .row .item .place-desr {
+  padding: 10px;
+  font-size: 15px;
+  color: #000;
+  background-color: #fff;
+}
+#tour .place .row .item .place-desr h1 {
+  font-size: 15px;
+  margin: 0;
+}
+#tour .place .row .item .place-desr span {
+  opacity: 0.6;
+  margin: 15px 0;
+  display: block;
+}
+#tour .place .row .item .place-desr p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+#tour .place .row .item .place-desr button {
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#tour .place .row .item .place-desr button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* contact */
+#contact .title {
+  text-align: center;
+}
+#contact .main .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .main .container .left,
+#contact .main .right {
+  width: 50%;
+}
+#contact .main .container .left {
+  font-size: 18px;
+  font-weight: 400;
+}
+#contact .main .container .left i {
+  width: 30px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#contact .main .right form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact .main .right form .input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#contact .main .right form input {
+  padding: 8px 5px;
+}
+#contact .main .right form textarea {
+  padding: 5px;
+  width: 100%;
+  margin: 15px 0;
+}
+#contact .main .right form .button {
+  width: 100%;
+  text-align: right;
+}
+#contact .main .right form button {
+  padding: 5px 15px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.2s;
+}
+#contact .main .right form button:hover {
+  background: #ccc;
+  color: #000;
+}
+
+.map{
+    background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    filter: grayscale(50%)
+}
+#footer{
+    background-color: #f1f1f1;
+}
+
+#footer .container{
+    text-align: center;
+    opacity: 0.8;
+}
+
+#footer .container i{
+    font-size: 24px;
+    padding: 0 1px;
+    margin-bottom: 10px;
+}
+#footer .container i:hover{
+    opacity: 0.5;
+}
+#footer .container p{
+    font-size: 15px;
+    color: #000;
+}
+#footer .container a{
+    opacity: 0.8;
+    color: inherit;
+}
+/* .modal */
+.module{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+
+.module-tickets {
+  background-color: #fff;
+  position: relative;
+  width: 800px;
+  max-width: calc(100% - 32px);
+  animation: drift-down 0.5s;
+}
+
+.module-tickets .title{
+  padding: 50px;
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.module-tickets .title i:last-child{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+.module-tickets .footer .container button:hover,
+.module-tickets .main .container button:hover,
+.module-tickets .title i:last-child:hover{
+  background: #ccc;
+  color: #000;
+}
+
+.module-tickets .main .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 250px;
+}
+.module-tickets .main .container i{
+  margin-right: 10px
+}
+.module-tickets .main .container input{
+  padding: 10px;
+  width: 100%;
+}
+.module-tickets .main .container button{
+  border: none;
+  background-color: #009688;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.module-tickets .footer .container{
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.module-tickets .footer .container button{
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  
+}
+.module-tickets .footer .container button i{
+  margin-left: 5px;
+}
+.open{
+  display: flex;
+}
+
+@keyframes drift-down {
+  from{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%);
+  }to{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
