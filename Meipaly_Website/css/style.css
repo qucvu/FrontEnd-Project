@@ -290,7 +290,7 @@ html {
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
-.portfolio .main .row .item:before {
+/* .portfolio .main .row .item:before {
   content: "";
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -301,7 +301,7 @@ html {
   z-index: 2;
   display: block;
   filter: inherit;
-}
+} */
 
 .portfolio .main .item .infor {
   background-color: rgba(230, 43, 74, 0.6);
