@@ -1,0 +1,39 @@
+// import
+@import "./helpers/variable";
+@import "./helpers/mixin";
+@import "./helpers/keyframes";
+@import "./base/reset";
+@import "./base/rs-bootstrap";
+@import "./components/common";
+@import "./components/header";
+@import "./components/right-sidebar";
+@import "./components/footer";
+
+
+.solutions {
+    padding: 10rem 0;
+    &__main {
+        .item {
+            padding: 5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            i {
+                font-size: 3.8rem;
+                color: $tcSecondary;
+                margin-right: 1.6rem;
+            }
+            .item-desc {
+                a {
+                    @include text($fs8, $tcTitle-day, $fwSemiBold);
+                    line-height: 1.2;
+                    margin-bottom: 1.5rem;
+                    display: block;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: $tcSecondary !important;
+                    }
+                }
+            }
+        }
+    }
+}

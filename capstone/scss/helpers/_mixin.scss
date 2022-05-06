@@ -1,0 +1,54 @@
+// font text
+@mixin text($fs, $c, $fw) {
+    font-size: $fs;
+    color: $c;
+    font-weight: $fw;
+}
+
+//size
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+//button
+@mixin button($fs, $c, $fw, $bg, $bd, $pd, $br) {
+    @include text($fs, $c, $fw);
+    background-color: $bg;
+    border: 1px solid $bd;
+    padding: $pd;
+    border-radius: $br;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+//icon
+@mixin icon($fs, $c, $fw, $bg, $bd, $br, $s) {
+    @include text($fs, $c, $fw);
+    @include size($s, $s);
+    line-height: $s;
+    text-align: center;
+    background-color: $bg;
+    border: 1px solid $bd;
+    border-radius: $br;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+//responsive
+@mixin responsive($breakpoint) {
+    @media screen and(max-width: $breakpoint) {
+        @content;
+    }
+}
+
+//HOME PAGE 
+@mixin circle-seo($size, $color, $border-width, $right, $top) {
+    position: absolute;
+    @include size($size, $size);
+    border-radius: 50%;
+    border: $border-width solid $color;
+    right: $right;
+    top: $top;
+    z-index: 20;
+}

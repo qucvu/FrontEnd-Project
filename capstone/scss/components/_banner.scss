@@ -1,0 +1,54 @@
+// BANNER
+.banner {
+    background: url(../img/b1.jpg) top center / cover no-repeat;
+    padding: 10rem 0;
+    position: relative;
+    .container {
+        // padding: 5rem 0;
+        position: relative;
+        z-index: 10;
+    }
+    &__content {
+        padding-top: 5rem;
+        h1 {
+            @include text($fsBigTitle--2, $tcWhite, $fwSemiBold);
+            text-transform: capitalize;
+            margin-top: 5rem;
+        }
+        p {
+            @include text($fs7, $tcWhite, $fwNormal);
+            opacity: 0.7;
+        }
+    }
+    &__overlay {
+        @include size(100%, 100%);
+        background: rgba(29, 42, 55, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    @include responsive($lg) {
+        padding: 7rem 0;
+        &__content {
+            h1 {
+                font-size: $fs10;
+            }
+        }
+    }
+    @include responsive($md) {
+        padding: 5rem 0;
+        &__content {
+            padding-top: 2.4rem;
+        }
+    }
+    @include responsive($sm) {
+        &__content {
+            h1 {
+                font-size: $fsTitle;
+            }
+            p {
+                font-size: $fs5;
+            }
+        }
+    }
+}

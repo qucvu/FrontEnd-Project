@@ -1,0 +1,360 @@
+// import
+@import "./helpers/variable";
+@import "./helpers/mixin";
+@import "./helpers/keyframes";
+@import "./base/reset";
+@import "./base/rs-bootstrap";
+@import "./components/common";
+@import "./components/header";
+@import "./components/banner";
+@import "./components/right-sidebar";
+@import "./components/footer";
+// ABOUT-COMPANY
+.about-company {
+    &__img {
+        img {
+            border-radius: 30% 70% 70% 30%/ 30% 30% 70% 70%;
+            box-shadow: 0 1.5rem 3.8rem 0 $bgShadowDark--2;
+            position: relative;
+            z-index: 1;
+        }
+        &__bg {
+            @include size(45rem, 45rem);
+            border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
+            background-color: $bgSecondary;
+            opacity: 0.4;
+            box-shadow: 0 1.5rem 3.8rem 0 $bgShadowDark--2;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &__box {
+            @include text($fs3, $tcWhite, $fwMedium);
+            @include size(20rem, 20rem);
+            background-color: $bgSecondary;
+            position: absolute;
+            right: 8.5rem;
+            bottom: 1rem;
+            padding: 3.5rem;
+            box-shadow: 3rem 3rem 3rem $bgShadowDark--2;
+            border-radius: 0.8rem;
+            transform: rotate(45deg);
+            z-index: 2;
+            &>div {
+                transform: rotate(-45deg);
+                h1 {
+                    @include text($fs10, $tcWhite, $fwMedium);
+                    line-height: 4rem;
+                    margin-bottom: 1.4rem
+                }
+                p {
+                    @include text($fs8, $tcWhite, $fwMedium);
+                    line-height: 2.8rem;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    &__content {
+        h2 {
+            @include text($fs8, $tcWhite, $fwMedium);
+            margin-bottom: 2.4rem;
+        }
+        button {
+            margin-top: 4rem;
+            margin-right: 2.4rem;
+        }
+        .btn--modal {
+            padding: 0;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+    &__items {
+        padding-top: 9.6rem;
+    }
+    &__item {
+        padding: 5rem 3rem;
+        border-radius: 0.8rem;
+        i {
+            @include icon(3.4rem, $tcSecondary, $fwMedium, transparent, transparent, unset, 3.5rem);
+            cursor: initial;
+        }
+        h1 {
+            // cursor: pointer;
+            // transition: all ease 0.2s;
+            font-size: $fs8;
+            margin-bottom: 1.5rem;
+            // &:hover {
+            //     color: $tcSecondary !important;
+            //     transition: all ease 0.2s;
+            // }
+        }
+    }
+    @include responsive($lg) {
+        &__img {
+            &__bg {
+                @include size(50rem, 50rem);
+            }
+        }
+        &__items {
+            padding-top: 5rem;
+        }
+    }
+    @include responsive($sm) {
+        &__img {
+            &__bg {
+                @include size(100%, 100%);
+            }
+            &__box {
+                @include size(15rem, 15rem);
+                &>div {
+                    transform: rotate(-45deg);
+                    h1 {
+                        font-size: 3.5rem;
+                        line-height: 4rem;
+                        margin-bottom: 1rem
+                    }
+                    p {
+                        font-size: 2rem;
+                        line-height: 2.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ABOUT-STATS
+.about-stats {
+    &__items {
+        margin-top: 5rem;
+    }
+    &__item {
+        span {
+            @include text($fsTitle, $tcSecondary, $fwNormal);
+            display: block;
+        }
+        h1 {
+            font-size: $fs8;
+            margin-bottom: 1.2rem;
+        }
+    }
+    &__img {
+        img {
+            border-radius: 0.8rem;
+        }
+    }
+    @include responsive($lg) {
+        &__items {
+            margin-top: 2.4rem;
+        }
+        &__img {
+            margin-top: 5rem;
+        }
+    }
+}
+
+// ABOUT-COVER
+.about-cover {
+    background: url(../img/bg1.jpg) center center / cover no-repeat;
+    background-attachment: fixed;
+    z-index: 20;
+    &__content {
+        max-width: 70rem;
+        margin: auto;
+        h1,
+        p {
+            color: $tcWhite !important;
+        }
+    }
+    .btn--modal {
+        margin-top: 2.4rem;
+        transform: scale(1);
+        transition: all ease 0.3s;
+        .video-play-icon {
+            i {
+                -webkit-text-stroke-color: $tcWhite;
+                border-color: $bgWhite;
+            }
+        }
+        &:hover {
+            transform: scale(1.2);
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+// ABOUT-TEAM
+.about-team {
+    &__item {
+        &__img {
+            position: relative;
+            overflow: hidden;
+            img {
+                border-radius: 0.8rem;
+                width: 100%;
+            }
+            &:hover {
+                .about-team__item__overlay {
+                    opacity: 1;
+                    transition: all .2s ease-in-out;
+                }
+                .about-team__item__details {
+                    opacity: 1;
+                    // top: 15%;
+                    margin-top: -10rem
+                }
+            }
+        }
+        &__overlay {
+            @include size(100%, 100%);
+            background-color: $bgShadowDark--4;
+            border-radius: 0.8rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all .2s ease-in-out;
+        }
+        &__details {
+            width: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            padding: 10%;
+            z-index: 20;
+            transition: all .2s ease-in-out;
+            p {
+                @include text($fs7, $tcWhite, $fwMedium);
+            }
+        }
+        &__socials {
+            margin-top: 2.4rem;
+            a {
+                i {
+                    @include icon($fs1, $tcWhite, $fwBold, transparent, transparent, 50%, 3.7rem);
+                }
+                &:hover {
+                    i {
+                        background-color: $bgShadowLight;
+                    }
+                }
+            }
+        }
+        &__info {
+            h1 {
+                margin: 2.5rem 0 0.5rem;
+                // cursor: pointer;
+                // transition: all ease 0.2s;
+                font-size: $fs7;
+                // &:hover {
+                //     color: $tcSecondary !important;
+                //     transition: all ease 0.2s;
+                // }
+            }
+            p {
+                line-height: 2.7rem;
+            }
+        }
+    }
+}
+
+// ABOUT-FEATURES
+.about-features {
+    &__title {
+        max-width: 80rem;
+        margin: auto;
+    }
+    &__items {
+        padding-top: 9.6rem;
+    }
+    &__item {
+        margin-bottom: 4.8rem;
+        i {
+            @include icon($fs11, inherit, $fwBold, transparent, inherit, 0.8rem, 8rem);
+            margin-top: 4px;
+        }
+        .icon {
+            &--success {
+                color: $tcSecondary;
+                i {
+                    border: 1px solid $bgSecondary;
+                }
+            }
+            &--info {
+                color: $tcBlue;
+                i {
+                    border: 1px solid $bgBlue;
+                }
+            }
+            &--danger {
+                color: $tcRed;
+                i {
+                    border: 1px solid $bgRed;
+                }
+            }
+            &--warning {
+                color: $tcOrange;
+                i {
+                    border: 1px solid $bgOrange;
+                }
+            }
+        }
+        h1 {
+            margin-bottom: 1.2rem;
+            // cursor: pointer;
+            // transition: all ease 0.2s;
+            font-size: $fs12;
+            // &:hover {
+            //     color: $tcSecondary !important;
+            //     transition: all ease 0.2s;
+            // }
+        }
+    }
+    @include responsive($lg) {
+        &__items {
+            padding-top: 2.4rem;
+        }
+    }
+    @include responsive($md) {
+        &__item {
+            i {
+                font-size: $fs13;
+            }
+            h1 {
+                font-size: $fs8;
+            }
+        }
+    }
+    @include responsive($sm) {
+        &__item {
+            i {
+                font-size: $fs8;
+                width: 6.2rem;
+                height: 6.2rem;
+                line-height: 6.2rem;
+            }
+            h1 {
+                font-size: $fs7;
+            }
+        }
+    }
+}
+
+// ABOUT-PROJECT
+.about-project {
+    @include responsive($lg) {
+        &__btn {
+            margin-top: 4.8rem;
+        }
+    }
+    @include responsive($md) {
+        &__btn {
+            margin-top: 2.4rem;
+        }
+    }
+}

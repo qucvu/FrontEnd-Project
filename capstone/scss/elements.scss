@@ -1,0 +1,193 @@
+// import
+@import "./helpers/variable";
+@import "./helpers/mixin";
+@import "./helpers/keyframes";
+@import "./base/reset";
+@import "./components/common";
+@import "./base/rs-bootstrap";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/banner";
+@import "./components/right-sidebar";
+
+
+.elemnent__main {
+  p {
+    opacity: 0.8;
+  }
+  pre {
+    padding: 2rem;
+    //   background-color: $bgLight;
+  }
+  code {
+    @include text($fs3, $tcPrimary-day, $fwNormal);
+    line-height: 2.7rem;
+    opacity: 1;
+  }
+  padding: 8rem 0;
+  .jumbotron {
+    .jumbotron-1 {
+      margin-bottom: 6rem;
+      padding: 6.2rem 3.5rem;
+      border-radius: 0.8rem;
+      h1 {
+        font-size: calc(2.35rem + 2.25vw);
+        font-weight: $fwLight;
+      }
+      span {
+        font-weight: $fwLight;
+        font-size: $fs7;
+        opacity: 0.8;
+      }
+    }
+    .jumbotron-2 {
+      padding: 2rem;
+    }
+  }
+  .fluid {
+    .fluid-1 {
+      padding: 6.2rem 2rem;
+      margin-bottom: 4rem;
+      h1 {
+        font-size: calc(2.35rem + 2.25vw);
+        font-weight: $fwLight;
+      }
+      p {
+        font-weight: $fwLight;
+        font-size: $fs7;
+      }
+    }
+    .fluid-2 {
+      padding: 2rem;
+    }
+  }
+  .card-deck {
+    .row {
+      .item {
+        h1 {
+          @include text($fs7, $tcTitle-day, $fwNormal);
+          margin-bottom: 2rem;
+        }
+        p:last-child {
+          color: #6c757d;
+          font-weight: $fwNormal;
+          font-size: $fsSubTitle;
+        }
+      }
+    }
+  }
+  .breadcrumbs {
+    .breadcrumb {
+      padding: 1.3rem 1.6rem;
+      margin-bottom: 1.6rem;
+      border-radius: 0.5rem;
+      a {
+        // color: $tcSecondary;
+      }
+    }
+  }
+  .buttons {
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: $fs3;
+    }
+  }
+  .outline-buttons {
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: $fs3;
+    }
+  }
+  .buttons-tag {
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: $fs3;
+    }
+    .btn-change {
+      border: 1px solid;
+      border-radius: 3px;
+      background-color: #e6e6e6;
+      color: rgba(0, 0, 0, 0.8);
+      line-height: 1;
+      border-color: #ccc #ccc #bbb;
+      &:hover{
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca
+      }
+      &:focus{
+        background-color: #0b5ed7;
+        color: $tcWhite;
+      }
+    }
+  }
+  .modal-popup{
+    button{
+      padding: 1rem 3rem;
+      font-size: $fs3;
+      border-radius: 0.6rem;
+    }
+  }
+  .modal-center{
+    button{
+      padding: 1rem 3rem;
+      font-size: $fs3;
+      border-radius: 0.6rem;
+    }
+  }
+  .modal-change{
+    font-size: $fs3;
+  }
+  .alert{
+    padding: 1.2rem 2rem;
+  }
+
+  .progress{
+    height: $fs3;
+  }
+ 
+  .form-control{
+    padding: 0.6rem 1.2rem;
+    font-size: $fs3;
+    border-radius: 0.8rem;
+  }
+  .input-group-text{
+    font-size: $fs3;
+  }
+  .input-forms{
+    button{
+      padding: 0.6rem 1.2rem;
+      font-size: $fs3;
+    }
+  }
+  .media{
+    display: flex;
+    align-items: flex-start;
+    img{
+      width: 5rem;
+      display: block
+    }
+  }
+  
+  .media-object, .nesting{
+      .title{
+        font-size: $fs8TitleElemnt;
+      }
+      h1{
+        @include text($fs7, $tcTitle-day, $fwSemiBold);
+        margin: .5rem 0;
+      }
+    }
+}
+.font-title-element {
+  font-size: $fs8TitleElemnt;
+}
+.radius-card {
+  border-radius: 0.8rem;
+}
+.font-text {
+  font-size: $fs3;
+}
+.title-distance {
+  margin-top: 3rem;
+}

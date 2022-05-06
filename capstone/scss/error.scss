@@ -1,0 +1,88 @@
+// import
+@import "./helpers/variable";
+@import "./helpers/mixin";
+@import "./helpers/keyframes";
+@import "./base/reset";
+@import "./base/rs-bootstrap";
+@import "./components/common";
+@import "./components/header";
+@import "./components/banner";
+@import "./components/right-sidebar";
+@import "./components/footer";
+// ERROR-CONTENT
+.error-content {
+    &__info {
+        max-width: 850px;
+        margin: auto;
+    }
+    &__left {
+        img {
+            max-width: 80%;
+        }
+    }
+    &__bigTitle {
+        @include text($fsEBigTitle, $tcSecondary, $fwBold);
+        line-height: 1;
+    }
+    &__title {
+        font-size: $fsETitle;
+        line-height: 1;
+        margin: 2.4rem 0 1.8rem;
+    }
+    &__form {
+        position: relative;
+        margin-top: 2.4rem;
+        input {
+            &::-webkit-input-placeholder {
+                font-style: italic;
+            }
+            &::-moz-placeholder {
+                font-style: italic;
+            }
+            &:-ms-input-placeholder {
+                font-style: italic;
+            }
+            &::-ms-input-placeholder {
+                font-style: italic;
+            }
+            &::placeholder {
+                font-style: italic;
+            }
+        }
+        button {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            width: 6rem;
+            padding: 0.6rem 1.2rem;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px
+        }
+    }
+    .btn-back {
+        font-size: $fs5;
+        margin-top: 5rem;
+        padding: 0 1.2rem;
+        &:hover {
+            color: $tcSecondary !important;
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.3rem $bgShadowGreen;
+        }
+    }
+    @include responsive($md) {
+        &__bigTitle {
+            font-size: $fsEBigTitle-2;
+        }
+        .btn-back {
+            margin-top: 2.4rem;
+        }
+    }
+    @include responsive($sm) {
+        &__bigTitle {
+            font-size: $fsEBigTitle-3;
+        }
+    }
+}

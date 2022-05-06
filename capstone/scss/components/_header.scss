@@ -1,0 +1,115 @@
+// HEADER
+.header {
+    @include size(100%, 10rem);
+    box-shadow: 0 3px 6px 0 $bgShadowDark;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all ease 0.3s;
+    z-index: 100;
+    &__logo {
+        h1 {
+            @include text($fsFooterLogo, inherit, $fwSemiBold);
+        }
+        span {
+            @include text($fs1, inherit, $fwSemiBold);
+            padding-left: 4.5rem;
+        }
+        i {
+            @include icon($fs9, $tcSecondary, $fwSemiBold, transparent, transparent, 0, 3.2rem);
+        }
+    }
+    // search
+    &__search {
+        transform: scale(1);
+        transition: all ease 0.5s;
+        i {
+            @include icon($fs3, $tcWhite, $fwBold, $bgSecondary, transparent, 50%, 4.5rem);
+        }
+        &--spread {
+            transform: scale(500);
+            transition: all ease 0.5s;
+            ~.header__search__form {
+                i {
+                    transform: rotate(0);
+                    transition: all ease 0.4s;
+                }
+                input {
+                    transform: translateX(0);
+                    transition: all ease 0.4s;
+                }
+            }
+        }
+        &__form {
+            @include size(100%, 100vh);
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            z-index: 10;
+            transition: all ease 0.4s;
+            i {
+                font-size: $fsBigIcon;
+                color: $tcWhite;
+                position: absolute;
+                top: 10%;
+                right: 5%;
+                cursor: pointer;
+                z-index: 11;
+                transform: rotate(90deg);
+                transition: all ease 0.4s;
+            }
+            input {
+                @include size(100%, 100vh);
+                @include text($fsSearch, $tcWhite, $fwNormal);
+                border: 0;
+                background: transparent;
+                -webkit-appearance: none;
+                outline: 0;
+                transform: translateX(10%);
+                transition: all ease 0.4s;
+                &::-webkit-input-placeholder {
+                    @include text($fsSearch, $tcWhite, $fwLight);
+                }
+                &::-moz-placeholder {
+                    @include text($fsSearch, $tcWhite, $fwLight);
+                }
+                &:-ms-input-placeholder {
+                    @include text($fsSearch, $tcWhite, $fwLight);
+                }
+                &::-ms-input-placeholder {
+                    @include text($fsSearch, $tcWhite, $fwLight);
+                }
+                &::placeholder {
+                    @include text($fsSearch, $tcWhite, $fwLight);
+                }
+            }
+        }
+    }
+    //theme
+    &__btn--theme {
+        i {
+            @include icon($fs3, inherit, $fwBold, transparent, transparent, 50%, 4rem);
+        }
+    }
+    @include responsive($xl) {
+        h1 {
+            font-size: $fs9;
+        }
+    }
+    @include responsive($lg) {
+        height: -webkit-max-content !important;
+        height: -moz-max-content !important;
+        height: max-content !important;
+        &__right {
+            position: absolute;
+            top: 1rem;
+            right: 4.5rem;
+        }
+    }
+    @include responsive($sm) {
+        h1 {
+            font-size: 2.6rem;
+        }
+    }
+}

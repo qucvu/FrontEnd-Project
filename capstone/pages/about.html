@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page - Corpvision - Corporate Category Website WordPress Theme</title>
+    <link rel="shortcut icon" href="../img/icon/icon-website.png" type="image/x-icon">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header js-change d-flex align-items-center" id="header">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand header__logo title--night header__title" href="#">
+                        <h1>
+                            <i class="fa fa-align-right me-1"></i>Corp Vision
+                        </h1>
+                        <span>Vision to your Future</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-lg-auto title--night header__title">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./services.html">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu title--day bg--white">
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./blog.html">Blog posts</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./error.html">404 page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./landing.html">Landing page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./elements.html">Elements page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="header__right d-flex align-items-center">
+                            <!-- search -->
+                            <div class="btn header__search">
+                                <i class="fa fa-search" id="js-search"></i>
+                            </div>
+                            <!-- change theme -->
+                            <input type="checkbox" id="js-checkbox" class="d-none">
+                            <label for="js-checkbox" class="header__btn--theme header__title text-body--day" id="js-change">
+                                <i id="js-moon" class="fa fa-moon"></i>
+                                <i id="js-sun" class="fa fa-sun" style="display:none"></i>
+                            </label>
+                        </div>
+                        <!-- search from -->
+                        <div class="header__search__form" style="visibility: hidden;">
+                            <i class="fa fa-times btn--close"></i>
+                            <form>
+                                <input name="search" placeholder="Start Typing" type="text">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="container w-100 h-100 text-center">
+            <div class="banner__content">
+                <h1>About us</h1>
+                <p>Experience you can trust, service you can count on.</p>
+            </div>
+        </div>
+        <div class="banner__overlay bg-overlay--day">
+        </div>
+    </section>
+
+    <!-- RIGHT-SIDEBAR -->
+    <div class="right-sidebar">
+        <div class="button-sidebar">
+            <i class="fa fa-angle-double-right"></i>
+        </div>
+        <div class="all-sidebar">
+            <div class="angel">
+            </div>
+            <div class="sidebar">
+                <a href="#"><i class="fa fa-arrow-left"></i>Back</a>
+                <a href="#"><i class="fa fa-download"></i>Download</a>
+                <a href="#"><i class="fa fa-shopping-cart"></i>Buy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT-COMPANY -->
+    <section class="about-company bg--white main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 px-4">
+                    <div class="position-relative about-company__img">
+                        <img src="../img/about2.jpg" alt="about" class="img-fluid">
+                        <div class="about-company__img__bg"> </div>
+                        <div class="about-company__img__box d-flex align-items-center justify-content-center">
+                            <div>
+                                <h1 class="text-center">25+</h1>
+                                <p class="text-center">Years of <br>Experience. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-4 mt-5 mt-lg-0">
+                    <div class="about-company__content">
+                        <h1 class="subTitle mb-2">About our company</h1>
+                        <h1 class="title title--day">We are the next generation of the business world, creative solutions
+                        </h1>
+
+                        <h2 class="title--day">Over 25 years, We complete every project with extra care as customer needs.
+                        </h2>
+                        <p class="text-body text-body--day">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat consequatur voluptatem ad.</p>
+
+                        <button class="btn btn--success">
+                            Read More </button>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn--modal" data-bs-toggle="modal" data-bs-target="#aboutCompanyModal">
+                            <span class="video-play-icon">
+                                <i class="fa fa-play"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row about-company__items justify-content-center">
+                <div class="col-lg-4 col-md-6 px-4">
+                    <div class="about-company__item bg--light d-flex h-100">
+                        <i class="fab fa-xing"></i>
+                        <div class="about-company__item__info ms-3">
+                            <h1 class="title--day text-hover--success">
+                                Perfect Design</h1>
+                            <p class="text-body text-body--day">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 px-4 mt-5 mt-md-0">
+                    <div class="about-company__item bg--light d-flex h-100">
+                        <i class="fa fa-thumbs-up"></i>
+                        <div class="about-company__item__info ms-3">
+                            <h1 class="title--day text-hover--success">
+                                Carefully Planned</h1>
+                            <p class="text-body text-body--day">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 px-4 mt-5 mt-lg-0">
+                    <div class="about-company__item bg--light d-flex h-100">
+                        <i class="fab fa-angellist"></i>
+                        <div class="about-company__item__info ms-3">
+                            <h1 class="title--day text-hover--success">
+                                Smartly Execute</h1>
+                            <p class="text-body text-body--day">Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="aboutCompanyModal" tabindex="-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/2N247cY2bEw"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT-STATS -->
+    <section class="about-stats bg--light main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-stats__content px-4">
+                    <h1 class="subTitle mb-4">Web design and digital marketing</h1>
+                    <h1 class="title title--day">We think strategy, UX design, and web development</h1>
+
+                    <div class="row about-stats__items">
+                        <div class="col-12 col-sm-6 about-stats__item">
+                            <span class="mb-4">1200+</span>
+                            <h1 class="title--day">Happy Clients</h1>
+                            <p class="text-body text-body--day">We help our clients increase profits by increasing their visibility online.</p>
+                        </div>
+
+                        <div class="col-12 col-sm-6 about-stats__item">
+                            <span class="mb-4">13k+</span>
+                            <h1 class="title--day">Completed projects </h1>
+                            <p class="text-body text-body--day">We help our clients increase profits by increasing their visibility online.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6 px-3 px-md-4 about-stats__img">
+                    <img src="../img/ab.jpg" alt="ab" class="img-fluid ">
+                </div>
+
+                <div class="col-lg-3 col-6 px-3 px-md-4 about-stats__img">
+                    <img src="../img/ab2.jpg" alt="ab2" class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT-COVER -->
+    <section class="about-cover banner">
+        <div class="container w-100 h-100 text-center">
+            <div class="about-cover__content">
+                <h1 class="title">We are the next generation of the business world, creative solutions
+                </h1>
+                <p class="text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa qui officia sed deserunt mollit anim id est laborum mollit anim id est nulla.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn--modal" data-bs-toggle="modal" data-bs-target="#aboutCoverModal">
+                    <span class="video-play-icon">
+                        <i class="fa fa-play"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="about-cover__overlay banner__overlay bg-overlay--day">
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="aboutCoverModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/2N247cY2bEw"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT-TEAM -->
+    <section class="about-team bg--white main">
+        <div class="container">
+            <h1 class="subTitle text-center">Our Professionals </h1>
+            <h1 class="title title--day text-center">Meet the Team </h1>
+            <div class="row about-team__items">
+
+                <div class="col-lg-3 col-sm-6 px-4">
+                    <div class="about-team__item text-center">
+                        <div class="about-team__item__img">
+                            <img src="../img/team1.jpg" alt="t1" class="img-fluid">
+                            <div class="about-team__item__overlay">
+                                <div class="about-team__item__details text-center">
+                                    <p>Our web design team will spend time with our digital marketing team. </p>
+                                    <div class="about-team__item__socials">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-team__item__info text-center">
+                            <h1 class="title--day text-hover--success">Amelia Jessica</h1>
+                            <p class="text-body text-body--day">Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 px-4 mt-sm-0 mt-5">
+                    <div class="about-team__item text-center">
+                        <div class="about-team__item__img">
+                            <img src="../img/team2.jpg" alt="t2" class="img-fluid">
+                            <div class="about-team__item__overlay">
+                                <div class="about-team__item__details text-center">
+                                    <p> Our web design team will spend time with our digital marketing team. </p>
+                                    <div class="about-team__item__socials">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-team__item__info text-center">
+                            <h1 class="title--day text-hover--success">Elizabeth Tracy</h1>
+                            <p class="text-body text-body--day">Photographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 px-4 mt-lg-0 mt-5">
+                    <div class="about-team__item text-center">
+                        <div class="about-team__item__img">
+                            <img src="../img/team3.jpg" alt="" class="img-fluid">
+                            <div class="about-team__item__overlay">
+                                <div class="about-team__item__details text-center">
+                                    <p> Our web design team will spend time with our digital marketing team. </p>
+                                    <div class="about-team__item__socials">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-team__item__info text-center">
+                            <h1 class="title--day text-hover--success">Charlotte Ava</h1>
+                            <p class="text-body text-body--day">Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 px-4 mt-lg-0 mt-5">
+                    <div class="about-team__item text-center">
+                        <div class="about-team__item__img">
+                            <img src="../img/team4.jpg" alt="" class="img-fluid">
+                            <div class="about-team__item__overlay">
+                                <div class="about-team__item__details text-center">
+                                    <p> Our web design team will spend time with our digital marketing team. </p>
+                                    <div class="about-team__item__socials">
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#"><i class="fa fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-team__item__info text-center">
+                            <h1 class="title--day text-hover--success">Emma Susan</h1>
+                            <p class="text-body text-body--day">Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT-FEATURES -->
+    <section class="about-features bg--light main">
+        <div class="container">
+            <div class="about-features__title">
+                <h1 class="subTitle text-center">Why choose us</h1>
+                <h1 class="title title--day text-center mx-lg-5">People choose us because we serve the best for everyone
+                </h1>
+            </div>
+            <div class="row about-features__items">
+                <div class="about-features__item col-lg-6 px-3">
+                    <div class="row">
+                        <div class="col-2 icon--success">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <div class="col-10 ps-5">
+                            <h1 class="title--day text-hover--success ms-md-4">
+                                Planning your business</h1>
+                            <p class="text-body text-body--day ms-md-4">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features__item col-lg-6 order-lg-5 px-3">
+                    <div class="row">
+                        <div class="col-2 icon--danger">
+                            <i class="fa fa-search-plus"></i>
+                        </div>
+                        <div class="col-10 ps-5">
+                            <h1 class="title--day text-hover--success ms-md-4">
+                                Doing research for your clients</h1>
+                            <p class="text-body text-body--day ms-md-4">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features__item col-lg-6 order-lg-1 px-3">
+                    <div class="row">
+                        <div class="col-2 icon--info">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div class="col-10 ps-5">
+                            <h1 class="title--day text-hover--success ms-md-4">
+                                Create business process</h1>
+                            <p class="text-body text-body--day ms-md-4">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-features__item col-lg-6 order-lg-5 px-3">
+                    <div class="row content4-right-grids">
+                        <div class="col-2 icon--warning">
+                            <i class="fa fa-chart-area"></i>
+                        </div>
+                        <div class="col-10 ps-5">
+                            <h1 class="title--day text-hover--success ms-md-4">
+                                We make the best strategies</h1>
+                            <p class="text-body text-body--day ms-md-4">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT-PROJECT -->
+    <section class="about-project main bg--white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 px-4">
+                    <div class="about-project__title">
+                        <h1 class="title title--day">Let's talk about your project and see how we can work together</h1>
+                        <p class="text-body text-body--day">Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 px-4 d-flex align-items-center">
+                    <a href="" class="btn btn--success about-project__btn">
+                        Get started on a project <i class="fa fa-arrow-right ms-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <main class="footer__main py-md-5">
+            <div class="container p-4 pb-md-5">
+                <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="footer__brand mb-4">
+                                <a href="#">
+                                    <div class="logo">
+                                        <i class="fa fa-align-right"></i>
+                                        <h1>Corp Vision</h1>
+                                    </div>
+                                    <span>Vision to your Future</span>
+                                </a>
+                            </div>
+                            <p>
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                            </p>
+                            <div class="icon mt-md-4 mt-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="item">
+                            <h1 class="footer__title">CONTACT INFO</h1>
+                            <p>
+                                Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.
+                            </p>
+                            <p>
+                                Phone Number :
+                                <a class="contact-href" href="tel:+1(21) 234 4567 ">+1(21) 234 4567</a>
+                            </p>
+                            <p>
+                                Email: <a class="contact-href" href="mailto:info@example.com">info@example.com</a>
+                            </p>
+                            <p>
+                                Support:
+                                <a class="contact-href" href="mailto:info@support.com ">info@support.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 mt-lg-0 mt-5">
+                        <div class="item">
+                            <h1 class="footer__title">CATEGORIES</h1>
+                            <p><a href="#">Marketing Strategy</a></p>
+                            <p><a href="#">Startup Business</a></p>
+                            <p><a href="#">Web development</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2 mt-lg-0 mt-5">
+                        <div class="item">
+                            <h1 class="footer__title">META</h1>
+                            <p><a href="#">Log in</a></p>
+                            <p><a href="#">Entries feed</a></p>
+                            <p><a href="#">Comments feed</a></p>
+                            <p><a href="#">WordPress.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container ">
+                <p>
+                    © 2022 Corp Vision All Rights Reserved | WordPress Theme by
+                    <a href="# ">W3Layouts.</a>
+                </p>
+            </div>
+        </footer>
+    </footer>
+    <div class="backToTop">
+        <a href="# "><i class="fa fa-angle-up" title="Go to top"></i></a>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- JS WOW LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js " integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- SCRIPT -->
+    <script src="../js/script.js "></script>
+</body>
+
+</html>

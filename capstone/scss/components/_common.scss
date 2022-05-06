@@ -1,0 +1,229 @@
+//background color
+.bg--day {
+    background-color: $bgPrimary-day;
+    transition: all ease 0.3s;
+}
+
+.bg--night {
+    background-color: $bgPrimary-night;
+    transition: all ease 0.3s;
+}
+
+.bg--white {
+    background-color: $bgWhite;
+    transition: all ease 0.3s;
+}
+
+.bg--dark {
+    background-color: $bgDark !important;
+    transition: all ease 0.3s;
+}
+
+.bg--light {
+    background-color: $bgLight;
+    transition: all ease 0.3s;
+}
+
+.bg--dark-1 {
+    background-color: $bgPrimary-night;
+    transition: all ease 0.3s;
+}
+
+.bg-servicepage {
+    background-color: rgba(29, 42, 55, 0.7);
+    transition: all ease 0.3s;
+}
+
+.bg-servicepage-change {
+    background-color: rgba(29, 42, 55, 0.8);
+    transition: all ease 0.3s;
+}
+
+
+.bg-overlay--day {
+    background-color: $bgOverlay-day;
+    transition: all ease 0.3s;
+}
+
+.bg-overlay--night {
+    background-color: $bgOverlay-night;
+    transition: all ease 0.3s;
+}
+.fill-white{
+    fill: $bgWhite;
+    transition: all ease 0.3s;
+}
+.fill-black{
+    fill: $bgDark !important;
+    transition: all ease 0.3s;
+}
+.border--day{
+    border-color: #eee;
+    transition: all ease 0.3s;
+}
+.border--night{
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    transition: all ease 0.3s;
+}
+
+//text color
+.text-body {
+    @include text($fsBody, $tcPrimary-day, $fwNormal);
+    line-height: 2.7rem;
+    opacity: 0.8;
+    &--day {
+        color: $tcPrimary-day !important;
+        transition: all ease 0.2s;
+    }
+    &--night {
+        color: $tcPrimary-night !important;
+        transition: all ease 0.2s;
+    }
+}
+
+.title {
+    @include text($fsTitle, $tcTitle-day, $fwBold);
+    line-height: 4.5rem;
+    margin-bottom: 2.4rem;
+    &--day {
+        color: $tcTitle-day !important;
+        transition: all ease 0.2s;
+    }
+    &--night {
+        color: $tcTitle-night !important;
+        transition: all ease 0.2s;
+    }
+    &--secondary {
+        color: $tcSecondary !important;
+        transition: all ease 0.2s;
+    }
+    @include responsive($lg) {
+        font-size: $fs9;
+    }
+    @include responsive($sm) {
+        font-size: $fs11;
+        line-height: 3.2rem;
+    }
+}
+
+.subTitle {
+    @include text($fsSubTitle, $tcSubTitle, $fwSemiBold);
+    line-height: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-hover--success {
+    cursor: pointer;
+    transition: all ease 0.3s;
+    &:hover {
+        color: $tcSecondary !important;
+        transition: all ease 0.3s;
+    }
+}
+
+//button green
+.btn--success {
+    @include button($fs3, $tcWhite, $fwSemiBold, $bgSecondary, $bgSecondary, 1.5rem 5rem, 0.8rem);
+    transition: all ease 0.3s;
+    &:hover {
+        color: $tcWhite;
+        background-color: $bgGreen-700;
+        border-color: $bgGreen-800;
+    }
+    @include responsive($sm) {
+        padding: 1.2rem 3rem;
+    }
+}
+
+//input
+.input {
+    &--config {
+        @include size(100%, 6rem);
+        @include text($fs5, $tcPrimary-day, $fwNormal);
+        padding: 0 2.5rem;
+        border: 1px solid $tcTitle-night;
+        border-radius: 0.8rem;
+        line-height: 5rem;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: $tcTitle-day;
+        }
+    }
+    &--light {
+        border: 1px solid $tcTitle-night;
+        &:focus {
+            border-color: $tcTitle-day;
+        }
+    }
+    &--dark {
+        border: 1px solid $tcTitle-day;
+        &:focus {
+            border-color: $tcTitle-night;
+        }
+    }
+}
+
+//icon
+.icon-alt {
+    &--day {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $tcTitle-day;
+        color: $bgWhite;
+    }
+    &--night {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $tcTitle-night;
+        color: $bgDark;
+    }
+}
+
+.backToTop {
+    i {
+        position: fixed;
+        @include icon($fs2, $bgWhite, $fwBold, $bgSecondary, none, 50%, 5rem);
+        right: 2rem;
+        bottom: 2rem;
+        // border: none;
+        // width: 5rem;
+        // height: 5rem;
+        // transition: all 0.3s ease-out;
+        // cursor: pointer;
+        // background: $bgSecondary;
+        // text-align: center;
+        // border-radius: 50%;
+        z-index: 26;
+    }
+    
+}
+
+.main {
+    padding: 9.6rem 0;
+    @include responsive($lg) {
+        padding: 7.2rem 0;
+    }
+    @include responsive($md) {
+        padding: 5.6rem 0;
+    }
+}
+
+.button-style {
+    padding: 1.5rem 5rem;
+    font-size: $fs3;
+    line-height: 1.8rem;
+    font-weight: $fwSemiBold;
+    border-radius: 0.8rem;
+    border: none;
+    background: $bgGreen-500;
+    color: $tcWhite;
+    transition: all 0.5s;
+    &:hover {
+        color: $tcWhite;
+        background-color: $bgGreen-700;
+        border-color: $bgGreen-800;
+    }
+    @include responsive($sm) {
+        padding: 1.2rem 3rem;
+    }
+}

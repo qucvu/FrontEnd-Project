@@ -1,0 +1,80 @@
+// background color
+$bgPrimary-day:#f7f7f7; //background
+$bgPrimary-night:#100f19;
+$bgSecondary:#009f4d;
+$bgWhite:#fff;
+$bgDark:#151421;
+$bgDark-500: #0d1326;
+$bgDark-300: #41414d;
+$bgLight:#f8f9fa;
+$bgBlue: #213364; //sidebar-right, dot
+$bgRed:#ff4c4c;
+$bgOrange:#f48924;
+$bgGreen-500:#00a63f; //button
+$bgGreen-700:#008030;
+$bgGreen-800:#00732c;
+$bgShadowDark:rgba(0, 0, 0, 0.05);
+$bgShadowDark--2:rgba(0, 0, 0, 0.2);
+$bgShadowDark--3:rgba(0, 0, 0, 0.9);
+$bgShadowDark--4:rgba(20, 20, 20, 0.7);
+$bgShadowLight:rgba(255, 255, 255, 0.3);
+$bgShadowGreen:rgba(0, 166, 63, 0.4);
+$bgOverlay-day:rgba(29, 42, 55, 0.7);
+$bgOverlay-night:rgba(29, 42, 55, 0.8);
+// text color
+$tcPrimary-day: #666; //paragraph
+$tcPrimary-night: #c2c2c2;
+$tcSecondary:#009f4d;
+$tcWhite:#fff;
+$tcWhite-200: #f8f9fa;
+$tcWhite-300: #e6ebff;
+$tcWhite-300: #e6ebff;
+$tcTitle-day:#3f3a64; //title
+$tcTitle-night:#eee;
+$tcSubTitle:#7e7d7d; //subtitle
+$tcGray:#404040;
+$tcFooterMain: #97a1a9;
+$tcFooterEnd: #7f8a94;
+$tcBlue: #213364;
+$tcRed:#ff4c4c;
+$tcOrange:#f48924;
+// font size
+$fsBigTitle:5.5rem;
+$fsBigTitle--2:5rem;
+$fsTitle:3.5rem;
+$fsSubTitle:1.4rem;
+$fsBody:1.7rem;
+$fs1:1.4rem;
+$fs2:1.5rem; //navbar
+$fs3:1.6rem; //=16px base
+$fs4:1.7rem;
+$fs5:1.8rem;
+$fs6:1.9rem;
+$fs7:2rem;
+$fs8:2.2rem;
+$fs8Title:2.8rem;
+$fs9:3.2rem; //logo
+$fs10:4rem;
+$fs11:3rem;
+$fs12:2.4rem;
+$fs13:2.8rem;
+$fsFooterLogo: 3rem;
+$fsSearch:5.4rem;
+$fsBigIcon:7rem;
+$fsETitle:2.6rem;
+$fsEBigTitle:12rem;
+$fsEBigTitle-2:10rem;
+$fsEBigTitle-3:8rem;
+$fs8TitleElemnt: 2.4rem;
+$fsBigSlider: 6.5rem;
+// font weight
+$fwLight:300;
+$fwNormal:400;
+$fwMedium:500;
+$fwSemiBold:600;
+$fwBold:700;
+// break point
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;

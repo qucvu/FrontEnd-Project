@@ -1,0 +1,76 @@
+// import
+@import "./helpers/variable";
+@import "./helpers/mixin";
+@import "./helpers/keyframes";
+@import "./base/reset";
+@import "./base/rs-bootstrap";
+@import "./components/common";
+@import "./components/header";
+@import "./components/banner";
+@import "./components/right-sidebar";
+@import "./components/footer";
+// BLOG-CONTENT
+.blog-content {
+    &__item {
+        border-radius: 0.8rem;
+        overflow: hidden;
+    }
+    &__img {
+        overflow: hidden;
+        min-height: 22rem;
+        img {
+            @include size(100%, 100%);
+            transform: scale(1);
+            transition: all ease 0.3s;
+            display: block;
+            &:hover {
+                transform: scale(1.1);
+                transition: all ease 0.3s;
+            }
+        }
+    }
+    &__details {
+        padding: 2rem;
+        border-left: 0;
+        border-right: 0;
+        p {
+            margin-bottom: 1.4rem;
+        }
+        h1 {
+            @include text($fs7, $tcWhite, $fwSemiBold);
+            line-height: 2.8rem;
+        }
+    }
+    &__author {
+        padding: 1.2rem 2rem;
+    }
+    &__pagination {
+        button {
+            @include size(4rem, 4rem);
+            line-height: 3rem;
+            opacity: 1;
+            margin: 0 2px;
+            padding: 0;
+            border-width: 2px;
+            transition: all ease 0.4s;
+            &.btn--prev,
+            &.btn--next {
+                width: inherit;
+                padding: 0 1.5rem;
+            }
+            &.active {
+                cursor: initial;
+            }
+            &:hover,
+            &.active {
+                background-color: $bgSecondary;
+                border-color: $bgSecondary;
+                transition: all ease 0.4s;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}

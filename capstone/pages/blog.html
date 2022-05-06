@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - Corpvision - Corporate Category Website WordPress Theme</title>
+    <link rel="shortcut icon" href="../img/icon/icon-website.png" type="image/x-icon">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header js-change d-flex align-items-center" id="header">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand header__logo title--night header__title" href="#">
+                        <h1>
+                            <i class="fa fa-align-right me-1"></i>Corp Vision
+                        </h1>
+                        <span>Vision to your Future</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-lg-auto title--night header__title">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./services.html">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu title--day bg--white">
+                                    <li class="dropdown-item">
+                                        <a class="nav-link active" href="./blog.html">Blog posts</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./error.html">404 page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./landing.html">Landing page</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a class="nav-link" href="./elements.html">Elements page</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="header__right d-flex align-items-center">
+                            <!-- search -->
+                            <div class="btn header__search">
+                                <i class="fa fa-search" id="js-search"></i>
+                            </div>
+                            <!-- change theme -->
+                            <input type="checkbox" id="js-checkbox" class="d-none">
+                            <label for="js-checkbox" class="header__btn--theme header__title text-body--day" id="js-change">
+                                <i id="js-moon" class="fa fa-moon"></i>
+                                <i id="js-sun" class="fa fa-sun" style="display:none"></i>
+                            </label>
+                        </div>
+                        <!-- search from -->
+                        <div class="header__search__form" style="visibility: hidden;">
+                            <i class="fa fa-times btn--close"></i>
+                            <form>
+                                <input name="search" placeholder="Start Typing" type="text">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="container w-100 h-100 text-center">
+            <div class="banner__content">
+                <h1>Blog posts</h1>
+                <p>Find all our latest news, insights, and events</p>
+            </div>
+        </div>
+        <div class="banner__overlay bg-overlay--day">
+        </div>
+    </section>
+
+    <!-- RIGHT-SIDEBAR -->
+    <div class="right-sidebar">
+        <div class="button-sidebar">
+            <i class="fa fa-angle-double-right"></i>
+        </div>
+        <div class="all-sidebar">
+            <div class="angel">
+            </div>
+            <div class="sidebar">
+                <a href="#"><i class="fa fa-arrow-left"></i>Back</a>
+                <a href="#"><i class="fa fa-download"></i>Download</a>
+                <a href="#"><i class="fa fa-shopping-cart"></i>Buy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOG-CONTENT -->
+    <section class="blog-content bg--light main">
+        <div class="container">
+            <div class="tab-content" id="nav-tabBlogContent">
+                <div class="tab-pane fade show active " id="nav-first">
+                    <div class="row blog-content__items">
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/blog1.jpg" class="img-fluid" alt="b1">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Startup Business</p>
+                                    <h1 class="title--day text-hover--success">
+                                        Hello world! </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/blog2.jpg" class="img-fluid" alt="b2">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Startup Business</p>
+                                    <h1 class="title--day text-hover--success">
+                                        Companies in NY launched a joint project on a three-tower hall </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/blog3.jpg" class="img-fluid" alt="b3">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Marketing strategy</p>
+                                    <h1 class="title--day text-hover--success">
+                                        Design breakthrough upgrades the product and ready to launch </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/b3.jpg" class="img-fluid" alt="b3">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Web develop,ent</p>
+                                    <h1 class="title--day text-hover--success">
+                                        The fledgling company builds its business around AC motors </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0">
+                                    <a href="#">
+                                        <img src="../img/blog5.jpg" class="img-fluid" alt="b5">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Startup Business</p>
+                                    <h1 class="title--day text-hover--success">
+                                        Business opportunity in developing a reliable electric motor. </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/blog4.jpg" class="img-fluid" alt="b4">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Marketing strategy</p>
+                                    <h1 class="title--day text-hover--success">
+                                        How to start a profitable home-based business within mins? </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-last">
+                    <div class="row blog-content__items">
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/b4.jpg" class="img-fluid" alt="b4">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Web development</p>
+                                    <h1 class="title--day text-hover--success">
+                                        Simple Business Solutions has generated thousands of dollars </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 px-4 pb-5">
+                            <article class="card bg--white input--light blog-content__item h-100">
+                                <div class="card-header blog-content__img p-0 position-relative">
+                                    <a href="#">
+                                        <img src="../img/blog2.jpg" class="img-fluid" alt="b2">
+                                    </a>
+                                </div>
+                                <div class="card-body input--light blog-content__details">
+                                    <p class="text-body text-body--day">Web development</p>
+                                    <h1 class="title--day text-hover--success">
+                                        Hello World! </h1>
+                                </div>
+                                <div class="card-footer blog-content__author d-flex align-items-center justify-content-between">
+                                    <a href="#">
+                                        <img src="../img/icon/icon-web.jpeg" alt="w3" class="img-fluid rounded-circle">
+                                    </a>
+                                    <span class="text-body text-body--day">by
+                                        <a href="#" class="title--day text-hover--success">W3Layouts</a>
+                                    </span>
+                                    <span class="text-body text-body--day">
+                                        April 1, 2021
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="blog-content__pagination d-flex justify-content-center">
+            <div class="nav" id="nav-tab">
+                <button id="js-prev" class="btn btn--prev text-body text-body--day text-center input--light" style="display:none">Prev</button>
+                <button class="btn text-body text-body--day text-center input--light active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first">1</button>
+                <button class="btn text-body text-body--day text-center input--light" id="nav-last-tab" data-bs-toggle="tab" data-bs-target="#nav-last">2</button>
+                <button id="js-next" class="btn btn--next text-body text-body--day text-center input--light">Next</button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <main class="footer__main py-md-5">
+            <div class="container p-4 pb-md-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="footer__brand mb-4">
+                                <a href="#">
+                                    <div class="logo">
+                                        <i class="fa fa-align-right"></i>
+                                        <h1>Corp Vision</h1>
+                                    </div>
+                                    <span>Vision to your Future</span>
+                                </a>
+                            </div>
+                            <p>
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+                            </p>
+                            <div class="icon mt-md-4 mt-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="item">
+                            <h1 class="footer__title">CONTACT INFO</h1>
+                            <p>
+                                Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.
+                            </p>
+                            <p>
+                                Phone Number :
+                                <a class="contact-href" href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+                            </p>
+                            <p>
+                                Email: <a class="contact-href" href="mailto:info@example.com">info@example.com</a>
+                            </p>
+                            <p>
+                                Support:
+                                <a class="contact-href" href="mailto:info@support.com">info@support.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 mt-lg-0 mt-5">
+                        <div class="item">
+                            <h1 class="footer__title">CATEGORIES</h1>
+                            <p><a href="#">Marketing Strategy</a></p>
+                            <p><a href="#">Startup Business</a></p>
+                            <p><a href="#">Web development</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2 mt-lg-0 mt-5">
+                        <div class="item">
+                            <h1 class="footer__title">META</h1>
+                            <p><a href="#">Log in</a></p>
+                            <p><a href="#">Entries feed</a></p>
+                            <p><a href="#">Comments feed</a></p>
+                            <p><a href="#">WordPress.org</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>
+                    © 2022 Corp Vision All Rights Reserved | WordPress Theme by
+                    <a href="#">W3Layouts.</a>
+                </p>
+            </div>
+        </footer>
+    </footer>
+    <div class="backToTop">
+        <a href="#"><i class="fa fa-angle-up" title="Go to top"></i></a>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- JS WOW LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- SCRIPT -->
+    <script src="../js/script.js"></script>
+    <script>
+        let btns = document.querySelectorAll('#nav-tab > button')
+        for (let btn of btns) {
+            btn.addEventListener('click', () => {
+                checkBtn()
+            })
+        }
+        let btnPrev = document.getElementById('js-prev')
+        let btnNext = document.getElementById('js-next')
+
+        const checkBtn = () => {
+            if (document.querySelector('#nav-first-tab.active')) {
+                btnPrev.style.display = 'none'
+            } else {
+                btnPrev.style.display = 'block'
+            }
+            if (document.querySelector('#nav-last-tab.active')) {
+                btnNext.style.display = 'none'
+            } else {
+                btnNext.style.display = 'block'
+            }
+        }
+        btnPrev.addEventListener('click', () => {
+            $("#nav-tab > .active").prev('button').trigger('click')
+            checkBtn()
+        })
+
+        btnNext.addEventListener('click', () => {
+            $("#nav-tab > .active").next('button').trigger('click')
+            checkBtn()
+        })
+    </script>
+</body>
+
+</html>
